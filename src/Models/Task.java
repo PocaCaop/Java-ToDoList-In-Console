@@ -1,16 +1,13 @@
 package Models;
 
-import java.util.Date;
-
 public class Task {
     private String name;
     private String description;
-    private boolean done;
+    private boolean status = false;
 
-    public Task(String name, String description, Date date) {
+    public Task(String name, String description) {
         this.name = name;
         this.description = description;
-        this.done = false;
     }
 
     public void setName(String name) {
@@ -21,17 +18,20 @@ public class Task {
         this.description = description;
     }
 
-    public void setDone(boolean done) {
-        this.done = done;
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
     @Override
     public String toString() {
-        System.out.println("*****************");
-        if (done){
-            return "To Do" + " " + name + "\n\t" + description;
+        String v;
+        if (!status){
+            return ". To Do" + " " + name + " " + description + "\n************";
+
+
         }else {
-            return "Done" + " " + name + "\n\t" + description;
+            return ". Done" + " " + name + "\n\t" + description + "\n************";
         }
+
     }
 }
