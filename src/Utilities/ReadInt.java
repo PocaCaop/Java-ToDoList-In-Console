@@ -21,4 +21,7 @@ public class ReadInt {
         }
         return num;
     }
+    public void nextLine(){
+        read.nextLine();
+    }
 }
