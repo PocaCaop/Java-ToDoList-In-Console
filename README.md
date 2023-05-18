@@ -5,9 +5,9 @@
 
 ### What can I do?
 
-You can create different tasks, check the ones that you have created, mark them as done and quit the app :man_technologist:
+You can create different tasks, check the ones that you have created, mark them as done, modify them and quit the app :man_technologist:
 
-<img width="237" alt="image" src="https://user-images.githubusercontent.com/70782671/236677880-6a9c1f2c-38d1-47a5-bfe6-4a1d3f9c4e8f.png">
+<img width="253" alt="image" src="https://github.com/oscar-gom/Java-ToDoList-In-Console/assets/70782671/186cd1f5-dc0e-4dbe-8ec1-5e61cad6854f">
 
 #### Create task
 
@@ -17,11 +17,16 @@ Just input the name of the task and a description and you will have your task cr
 
 This option allows you to see all your todos
 
-<img width="241" alt="image" src="https://user-images.githubusercontent.com/70782671/236677945-09c6bc0c-3ceb-4c5e-857f-2856953694eb.png">
 
 #### Mark Task as done
 
 Input the number option you want to mark as done and the task will be deleted so you can focus on your todos.
+
+#### Modify your ToDos
+
+You can change the name and description of an specfic task to fix typos or whatever you want (it will stay in the same position)
+
+### Your TODOS are automatically saved after you quit the program and loaded automatically when you open it again!
 
 
 ### Enjoy and have fun :video_game:
