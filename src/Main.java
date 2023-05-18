@@ -21,7 +21,8 @@ public class Main {
                 \t1. Insert New Task 🆕
                 \t2. Check Tasks 👁️
                 \t3. Mark Task as done ✅
-                \t4. Quit application ❌""");
+                \t4. Modify Task 🔧
+                \t5. Quit application ❌""");
             switch (option){
                 case 1 -> {
                     list.add(agenda.createTask());
@@ -32,10 +33,16 @@ public class Main {
                 case 3 -> {
                     list = agenda.changeTaskStatus();
                 }
-                case 4 ->{
+                case 4 -> {
+                    list = agenda.modifyTask();
+                }
+                case 5 ->{
                     System.out.println("Goodbye and thanks!");
                 }
+                default -> {
+                    System.out.println("Error: That's not a valid option!");
+                }
             }
-        }while (option !=4);
+        }while (option !=5);
     }
 }

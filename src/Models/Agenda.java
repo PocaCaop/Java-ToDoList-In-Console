@@ -48,4 +48,28 @@ public class Agenda {
         return tList;
     }
 
+    public ArrayList modifyTask(){
+        if (tList.isEmpty()) {
+            System.out.println("Your ToDo List is empty :(");
+        } else {
+            for (int i = 0; i < tList.size(); i++) {
+                System.out.print(i + 1);
+                System.out.println(tList.get(i));
+                System.out.println();
+            }
+            ReadInt rInt = new ReadInt();
+            ReadText rText = new ReadText();
+            int option = rInt.readNum("Choose the task you want to modify");
+            Task task2Mod = tList.get(option-1);
+            String name = rText.readLine("Insert a new name for your task");
+            String descr = rText.readLine("Insert a new description for your task");
+            task2Mod.setName(name);
+            task2Mod.setDescription(descr);
+            tList.remove(option-1);
+            tList.add(option-1, task2Mod);
+
+        }
+        return tList;
+    }
+
 }
